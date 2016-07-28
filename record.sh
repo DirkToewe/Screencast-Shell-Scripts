@@ -45,14 +45,16 @@ avconv \
 
 # LINE 26: alternatively to 'avconv' from the library LibAV, 'ffmpeg' can be used
 # LINE 27-28: Record the computer's output, two channel source (-ac 2) sampled with ~44kHz (-ar)
-# LINE 29-30: Record the computer's microphone, two channel source (-ac 2) sampled with ~44kHz (-ar) (The audio device's name needs to be #             adjusted, find audio sources and their properties by: $ pactl list sources)
+# LINE 29-30: Record the computer's microphone, two channel source (-ac 2) sampled with ~44kHz (-ar) (The audio device's name needs to be
+#             adjusted, find audio sources and their properties by: $ pactl list sources)
 # LINE 31: Record the screen. 
 # LINE 32: Draws a frame around the region being recorded.
 # LINE 33: The size of the recorded region
 # LINE 34: Recorded screen number and position of the recorded region
 #          "-i :0.0+x,y" The 0.0 (first "desktop") and the x and y offset of the recorded frame. Keep in mind that multiple screens
 #          are still one "desktop" for X11
-# LINE 35-37: Probably the coolest part of the recording script: Map the channels 0,1,2 (Audio Out,Microphone,Video) to the output. #             Microphone and Audio Out are recorded on separate audio tracks and can be merged with a video editing tool
+# LINE 35-37: Probably the coolest part of the recording script: Map the channels 0,1,2 (Audio Out,Microphone,Video) to the output.
+#             Microphone and Audio Out are recorded on separate audio tracks and can be merged with a video editing tool
 # LINE 38: The recording/output audio bitrate
 # LINE 39: The recording/output audio frequency
 # LINE 40: The audio codec
